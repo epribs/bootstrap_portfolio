@@ -3,28 +3,45 @@ header {
 	margin-top:40px;
   width: 100%;
   min-height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/header-chi.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
 	}
 header .header-content {
   position: relative;
-  text-align: center;
-  padding: 50px 15px 100px;
   width: 100%;
-  background-color: rgba(0,0,0,0.4);
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+header .header-left{
+  float:left;
+  margin: auto;
+  text-align: left;
+  padding:5%;
+}
+header .header-right{
+  float:right;
+  margin: auto;
+  text-align: right;
+  padding:5%;
 }
 header .header-content .header-content-inner h1 {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 36px;
+}
+header .header-content .header-content-inner h3 {
+  font-weight: 200;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -32,15 +49,33 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 50px;
+}
+header .header-content .header-content-inner p em {
+  font-style: italic;
+  font-size:20px;
 }
 .section-heading {
   margin-top: 40px;
 }
+h2 {
+  font-weight:400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+}
 .social-box {
   max-width: 400px;
   margin: 30px auto;
+}
+.social-box h3 {
+  font-weight: 200;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
 }
 .social-box a {
   text-decoration: none;
@@ -53,19 +88,37 @@ header .header-content .header-content-inner p {
 	margin-bottom: 30px;
 }
 
+.aboutMe h4 {
+  font-weight:600;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 25px;
+  font-size: 20px;
+}
+
+.aboutMe p {
+  padding: 25px;
+}
+
 .readMore {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+  width: 100%;
 	text-align: center;
 	margin:0;
-	padding: 0;
-	background-image: radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.3), transparent);
-	background-image: -o-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.3), transparent);
-	background-image: -ms-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.3), transparent);
-	background-image: -moz-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.3), transparent);
-	background-image: -webkit-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.3), transparent);
+  padding: 15px !important;
+  overflow: visible;
+	background-image: radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.7), transparent);
+	background-image: -o-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.7), transparent);
+	background-image: -ms-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.7), transparent);
+	background-image: -moz-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.7), transparent);
+	background-image: -webkit-radial-gradient(center bottom, ellipse cover, rgba(0,0,0,0.7), transparent);
+}
+.readMore .btn {
+  border: rgba(0, 140, 186, 0.9);
+  border-radius: 4px;
+  
 }
 .bg-dark {
   background-color: rgba(0,0,0,0.4);
@@ -94,6 +147,7 @@ header .header-content .header-content-inner p {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
+
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   width: 100%;
   text-align: center;
@@ -108,16 +162,32 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
+}
+.portfolio-box-caption-content .text-faded {
+  font-style: italic;
+  font-weight: 100 !important;
+  font-size: 14px !important;
+  line-height: 1.2em;
+  text-transform: lowercase !important;
+  padding-bottom: 5px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
+  font-size: 24px;
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 .portfolio-box:focus {
   outline: none;
+}
+.portfolio-box img {
+width: 100%;
+height: 350px;
+overflow: hidden;
+object-fit: cover;
+object-position: top left;
+border: rgba(0,0,0,0.7) 2px solid;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -140,6 +210,15 @@ header .header-content .header-content-inner p {
     transform: translate(-50%, -50%);
 }
 
+footer {
+  min-height: 100px;
+}
 
+footer p {
+  margin: auto;
+  padding: 25px 0;
+  text-align: center;
+
+}
 
 

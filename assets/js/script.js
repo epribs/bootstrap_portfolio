@@ -1,11 +1,11 @@
 function readMore() {
 
 var $el, $ps, $up, totalHeight;
-    $(".aboutMe .btn").on("click",function() {
+    
       
       totalHeight = 0
     
-      $el = $(this);
+      $el = $(".aboutMe .btn");
       $p  = $el.parent();
       $up = $p.parent();
       $ps = $up.find("p:not('.readMore')");
@@ -31,5 +31,5 @@ var $el, $ps, $up, totalHeight;
       // prevent jump-down
       return false;
         
-    });
-  }
+    
+}

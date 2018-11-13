@@ -18,8 +18,8 @@ var $el, $ps, $up, totalHeight;
       $up
         .css({
           // Set height to prevent instant jumpdown when max height is removed
-          "min-height": 850,
-          "max-height": 890
+          "min-height": 890,
+          "max-height": 950
         })
         .animate({
           "height": totalHeight
